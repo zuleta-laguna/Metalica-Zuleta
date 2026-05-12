@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Boldonse&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rye&display=swap");
+
+body {
+  background-color: black;
+}
+#Main {
+  background-image: url("./assets/WelderWorking.png");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 40px 40px 60px;
+}
+.logo {
+  width: 120px;
+  height: 120px;
+}
+.Title {
+  color: white;
+  font-family: "Boldonse", system-ui;
+  font-size: clamp(48px, 8vw, 100px);
+  margin-top: 100px;
+  font-weight: 400;
+}
+.Title_span_Style {
+  text-decoration: underline;
+}
+.description-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 40px;
+}
+.description-about-metalicazuleta {
+  width: min(600px, 100%);
+}
+.subtitlecontenth2 {
+  font-family: "Rye", serif;
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+.contentAboutMetalicaZuleta {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 29px;
+  font-weight: 200;
+}
+.image-mask {
+  width: min(600px, 100%);
+  mask-image: linear-gradient(black 80%, transparent);
+}
+.image-mask img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.ProjectsSections {
+  width: 100%;
+  padding-bottom: 60px;
+}
+.ProjectsCreated {
+  width: 100%;
+}
+.alingSubtitle {
+  padding: 70px 40px;
+}
+.SubtitleProjects {
+  color: white;
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(28px, 4vw, 40px);
+  text-align: right;
+}
+.cardSections {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.aling-card {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project {
+  width: min(360px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(24px, 3vw, 30px);
+  font-weight: 400;
+  color: white;
+  margin: 24px 0 12px;
+}
+.project button {
+  font-family: "Rye", serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #10121c;
+  width: 100%;
+  max-width: 240px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #cc5500;
+  border: none;
+  cursor: pointer;
+}
+.img-projects {
+  border-radius: 30px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #10121c;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content h2 {
+  font-family: "Rye", serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 300px;
+}
+.modal-content ul {
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  list-style: none;
+}
+.modal-content p {
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 34px;
+  cursor: pointer;
+  color: white;
+}
+
+.modal-image {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+.button_whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 24px;
+  color: #10121c;
+  text-decoration: none;
+  background-color: greenyellow;
+  border-radius: 20px;
+  width: fit-content;
+  max-width: 100%;
+  height: 50px;
+  align-self: center;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+.button_whatsapp img {
+  width: 25px;
+  height: 25px;
+}
+.modal-content h3 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+  margin-top: 300px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  background-color: #07080c;
+}
+
+footer p {
+  font-size: 25px;
+}
+.SocialNetworkMetalicaZuleta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.logoFooter {
+  width: 150px;
+  height: 150px;
+}
+.hiperlinkSocialNetwork {
+  display: flex;
+  gap: 30px;
+}
+.hiperlinkSocialNetwork img {
+  width: 50px;
+  height: 50px;
+}
+.WhatsappQR img {
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  #Main {
+    padding: 32px 24px 48px;
+  }
+
+  .description-content {
+    padding: 40px 24px;
+  }
+
+  .ProjectsSections {
+    padding-bottom: 40px;
+  }
+
+  .alingSubtitle {
+    padding: 40px 24px;
+  }
+
+  .SubtitleProjects {
+    text-align: center;
+  }
+
+  .project button {
+    max-width: 100%;
+  }
+
+  footer {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Main {
+    padding: 24px 20px 40px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .Title {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 70px;
+  }
+
+  .description-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .description-about-metalicazuleta,
+  .image-mask {
+    width: 100%;
+  }
+
+  .SubtitleProjects {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .aling-card {
+    gap: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 40px 20px;
+    gap: 30px;
+    margin-top: 150px;
+    text-align: center;
+  }
+
+  .SocialNetworkMetalicaZuleta {
+    width: 100%;
+  }
+
+  .logoFooter {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hiperlinkSocialNetwork {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hiperlinkSocialNetwork img {
+    width: 44px;
+    height: 44px;
+  }
+}
