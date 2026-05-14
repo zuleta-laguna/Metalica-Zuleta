@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Boldonse&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rye&display=swap");
-
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: black;
+  width: 100%;
 }
 #Main {
   background-image: url("./assets/WelderWorking.png");
   min-height: 100vh;
   background-size: cover;
   background-position: center;
-  padding: 40px 40px 60px;
+  padding: 30px 30px 30px 30px;
 }
 .logo {
   width: 120px;
@@ -305,7 +309,7 @@ footer p {
   .Title {
     margin-top: 200px;
     text-align: center;
-    font-size: 70px;
+    font-size: 65px;
   }
 
   .description-content {
